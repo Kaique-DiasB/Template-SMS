@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Regularização do seu pagamento</title>
+    <style>
+        ion-icon[name="call"] {
+            font-size: 30px; 
+            transform: rotate(45deg);
+            color: #000D37; 
+        }
+    
+        body {
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            color: #000d37;
+        }
+        .email-container {
+            height: 725px;
+            margin: 20px auto;
+
+            
+        }
+        .header {
+            background-image: url(assets/0001.jpg);
+            /* background-color: #2F58A5; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+    }
+
+        .footer {
+            background-image: url(assets/footerPendencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 99px;
+        }
+
+        .content {
+            color: #000d37;;
+            font-size: 16px;
+            line-height: 1.6;
+            border-bottom: 10px solid #2F58A5;
+            padding: 30px 30px 0 30px;
+        }
+
+        .Contact-Group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content p {
+            margin: 0 0 15px;
+            font-size: 20px;
+        }
+        strong {
+            color: #2b50bb;
+        }
+        .contact {
+            width: 70%;
+            border: 2px solid #1C1A35;
+            padding: 15px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact-text {
+            color: #101C43;
+            line-height: 1.5;
+            max-width: 50%;
+            font-size: 16px;
+        }
+        .contact-number {
+            display: flex;
+            align-items: center;
+            font-size: 24px; 
+            right: 0;
+            color: #2b50bb;
+            width: auto;
+        }
+        .ddd {
+            font-size: 20px;
+            margin-right: 5px;
+            margin-left: 7px;
+            font-weight: bold;
+        }
+        #signature{
+                padding: 10px;
+            }
+        
+
+        @media (max-width: 600px) {
+            .header {
+            background-image: url(assets/0001.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 230px;
+    }
+
+        .footer {
+            background-image: url(assets/footerPendencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+        }
+            .email-container {
+                padding: 15px;
+            }
+
+            .content p{
+                font-size: 13px;
+            };
+            .content{
+                padding: 5px;
+            }
+            .contact {
+                flex-direction: column;
+                text-align: center;
+                font-size: 10px;
+            }
+            
+            .contact-text, .contact-number {
+                max-width: 100%;
+            }
+            .contact-number {
+                font-size: 20px;
+                margin-top: 10px;
+                text-align: right;
+            }
+            .ddd{
+                font-size: 18px;
+            }
+            #signature{
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+        </div>
+        <div class="content">
+            <p>Olá, tudo bem?</p>
+            <p>Verificamos que a cobertura do seu veiculo foi <strong>cancelada</strong>, mas ainda há um 
+            boleto em aberto referente ao período em que o serviço esteve ativo.</p>
+            <p><strong>Para evitar pendências financeiras, realize o pagamento hoje.</strong></p>
+            <p>O <strong>não</strong> pagamento pode resultar em <strong>medidas de cobrança</strong>, incluindo a
+            possível inclusão do seu CPF/CNPJ nos orgões de proteção ao crédito (SCP/SERASA).</p>
+            
+            <div class="Contact-Group">
+                <div class="contact">
+                    <ion-icon name="call"></ion-icon>
+
+                    <div class="contact-text">
+                        Caso tenha dúvidas estamos à disposição no telefone:
+                    </div>
+                    <div class="contact-number">
+                        <i>
+                            <span class="ddd">(31)</span>3972-5001
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <p id="signature">Atenciosamente,<br>BP Seguradora</p>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

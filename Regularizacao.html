@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
+    <title>Regularização do seu pagamento</title>
+    <style>
+        ion-icon[name="call"] {
+            font-size: 30px; 
+            transform: rotate(45deg);
+            color: #000D37; 
+        }
+    
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .header {
+            background-image: url(assets/headerRugulation.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 230px;
+            width: 100%;
+    }
+
+        .footer {
+            background-image: url(assets/footerRegularizacao.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100px;
+        }
+
+        .content {
+            color: #555555;
+            font-size: 16px;
+            line-height: 1.6;
+            border-bottom: 10px solid #101C43;
+            padding: 30px 30px 0 30px;
+            background: linear-gradient(to bottom, #ffffff, #F2F2F2);
+
+        }
+
+        .Contact-Group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content p {
+            margin: 0 0 15px;
+            font-size: 20px;
+        }
+        strong {
+            color: #617CCA;
+        }
+        .contact {
+            width: 70%;
+            border: 2px solid #1C1A35;
+            padding: 15px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact-text {
+            color: #101C43;
+            line-height: 1.5;
+            max-width: 50%;
+            font-size: 16px;
+        }
+        .contact-number {
+            display: flex;
+            align-items: center;
+            font-size: 20px; 
+            right: 0;
+            color: #617CCA;
+            width: auto;
+        }
+        .ddd {
+            font-size: 18px;
+            margin-right: 5px;
+            margin-left: 7px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+            background-image: url(assets/headerRugulation.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 230px;
+    }
+
+        .footer {
+            background-image: url(assets/footerRegularizacao.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+        }
+            .email-container {
+                padding: 15px;
+            }
+            .contact {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-text, .contact-number {
+                max-width: 100%;
+            }
+            .contact-number {
+                font-size: 20px;
+                margin-top: 10px;
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+        </div>
+        <div class="content">
+            <p>Olá, tudo bem?</p>
+            <p>Identificamos que seu boleto venceu em 01/2025 e ainda não consta pagamento em nosso sistema.</p>
+            <p>Caso tenha interesse em <strong>reativar</strong> seu contrato, basta nos enviar a revistoria</p>
+            <p>e providenciar um <strong>boleto atualizado, sem juros e multa.</strong></p>
+            <p><strong>Caso já tenha efetuado o pagamento, por favor, desconsidere esta mensagem.</strong></p>
+            
+            <div class="Contact-Group">
+                <div class="contact">
+                    <ion-icon name="call"></ion-icon>
+
+                    <div class="contact-text">
+                        Para mais informações, entre em contato pelo telefone:
+                    </div>
+                    <div class="contact-number">
+                        <i>
+                            <span class="ddd">(31)</span>3972-5001
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+        
+            <p style="color: #000D37; padding: 10px;">Atenciosamente,<br>BP Seguradora</p>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
