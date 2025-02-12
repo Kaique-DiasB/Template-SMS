@@ -24,18 +24,15 @@
             color: #000d37;
         }
         .email-container {
-            height: 725px;
             margin: 20px auto;
 
             
         }
         .header {
-            background-image: url(assets/0001.jpg);
-            /* background-color: #2F58A5; */
+            background-image: url(assets/headerPendencia.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
-            height: 400px;
+            height: 350px;
             width: 100%;
     }
 
@@ -44,7 +41,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            height: 99px;
+            height: 100px;
         }
 
         .content {
@@ -54,31 +51,34 @@
             border-bottom: 10px solid #2F58A5;
             padding: 30px 30px 0 30px;
         }
-
+        
+        strong {
+            color: #2b50bb;
+        }
         .Contact-Group{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 10px 0;
+            border: 2px solid red;
+
         }
 
-        .content p {
-            margin: 0 0 15px;
-            font-size: 20px;
-        }
-        strong {
-            color: #2b50bb;
-        }
         .contact {
-            width: 70%;
+            width: auto;
             border: 2px solid #1C1A35;
-            padding: 15px;
+            padding: 5px;
             border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: auto;
             margin-right: auto;
+        }
+        .content p {
+            margin: 0 0 15px;
+            font-size: 20px;
         }
         .contact-text {
             color: #101C43;
@@ -104,10 +104,26 @@
                 padding: 10px;
             }
         
-
-        @media (max-width: 600px) {
+            @media (max-width: 470px) {
+                .contact {
+                width: auto;
+                font-size: 10px;
+                padding: 2px;
+            }
+                .contact-text{
+                font-size: 12px;
+            }
+            .contact-number{
+                font-size: 15px;
+            }
+            .ddd{
+                font-size: 12px;
+            }
+        }
+        
+            @media (min-width: 471px) and (max-width: 600px)  {
             .header {
-            background-image: url(assets/0001.jpg);
+            background-image: url(assets/headerPendencia.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -124,29 +140,31 @@
             .email-container {
                 padding: 15px;
             }
-
+            .Contact-Group{
+                padding: 10px 0;
+            }
             .content p{
                 font-size: 13px;
             };
             .content{
                 padding: 5px;
+                
             }
             .contact {
-                flex-direction: column;
-                text-align: center;
+                width: auto;
+                font-size: 10px;
+                padding: 2px;
+            }
+
+            .contact-text{
                 font-size: 10px;
             }
-            
-            .contact-text, .contact-number {
-                max-width: 100%;
+            .ddd{
+                font-size: 16px;
             }
             .contact-number {
-                font-size: 20px;
-                margin-top: 10px;
+                font-size: 19px;
                 text-align: right;
-            }
-            .ddd{
-                font-size: 18px;
             }
             #signature{
                 padding: 10px;
