@@ -6,12 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Regularização do seu pagamento</title>
+    <title>Pendencia Finaneira</title>
     <style>
         ion-icon[name="call"] {
             font-size: 30px; 
-            transform: rotate(45deg);
+            transform: rotate(39deg);
             color: #000D37; 
+            margin-left: -11px;
         }
     
         body {
@@ -55,19 +56,29 @@
         strong {
             color: #2b50bb;
         }
-        .Contact-Group{
+        .contact-group{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 10px 0;
-            border: 2px solid red;
 
         }
 
+        .content-icon{
+            position: relative;
+            left: 0;
+        }
+
+        #teste{
+                margin:0;
+                padding: 0;
+            }
+
         .contact {
+            position: 'absolute';
             width: auto;
-            border: 2px solid #1C1A35;
+            border: 1px solid #1C1A35;
             padding: 5px;
             border-radius: 50px;
             display: flex;
@@ -105,11 +116,23 @@
             }
         
             @media (max-width: 470px) {
+                .header{
+                    height: 100px;
+                    background-size: cover;
+                    
+                }
+                .footer{
+                    height: 65px;
+                    width: auto;
+                }
                 .contact {
                 width: auto;
                 font-size: 10px;
                 padding: 2px;
             }
+                .content p{
+                    font-size: 12px;
+                }
                 .contact-text{
                 font-size: 12px;
             }
@@ -127,7 +150,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 230px;
+            height: 275px;
     }
 
         .footer {
@@ -144,10 +167,11 @@
                 padding: 10px 0;
             }
             .content p{
-                font-size: 13px;
+                font-size: 14px;
             };
             .content{
-                padding: 5px;
+                /* padding: 5px; */
+                padding: 0;
                 
             }
             .contact {
@@ -169,6 +193,7 @@
             #signature{
                 padding: 10px;
             }
+
         }
     </style>
 </head>
@@ -183,17 +208,19 @@
             boleto em aberto referente ao período em que o serviço esteve ativo.</p>
             <p><strong>Para evitar pendências financeiras, realize o pagamento hoje.</strong></p>
             <p>O <strong>não</strong> pagamento pode resultar em <strong>medidas de cobrança</strong>, incluindo a
-            possível inclusão do seu CPF/CNPJ nos orgões de proteção ao crédito (SCP/SERASA).</p>
+            possível inclusão do seu CPF/CNPJ nos orgões de proteção ao crédito (SPC/SERASA).</p>
             
-            <div class="Contact-Group">
+            <div class="contact-group">
                 <div class="contact">
-                    <ion-icon name="call"></ion-icon>
+                    <div class="content-icon">
+                        <ion-icon name="call"></ion-icon>
+                    </div>
 
                     <div class="contact-text">
-                        Caso tenha dúvidas estamos à disposição no telefone:
+                        Caso tenha dúvidas estamos<br> à disposição no telefone:
                     </div>
                     <div class="contact-number">
-                        <i>
+                        <i style="display: inline; margin-right: 5px;">
                             <span class="ddd">(31)</span>3972-5001
                         </i>
                     </div>
